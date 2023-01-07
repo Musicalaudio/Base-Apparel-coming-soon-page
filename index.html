@@ -16,11 +16,12 @@
   <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
-  <header>
-    <img src="./images/logo.svg" alt="logo">
-  </header>
-  <main>
-    <picture>
+
+    <div class="logo">
+      <img src="./images/logo.svg" alt="logo">
+    </div>
+    <picture class="img-container">
+      <source srcset="./images/hero-desktop.jpg" media="(min-width: 900px">
       <img src="./images/hero-mobile.jpg" class="hero-img" alt="Brunette woman in front of a plant">
     </picture>
     <section class="text-container">
@@ -29,14 +30,13 @@
       <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
 
       <form class="email-form">
-        <input class="email-form__inpt" type="email" name="email address" placeholder="Email Address">
-        <button class="email-form__btn"><img src="./images/icon-arrow.svg" alt="submit button"></button>
+        <input class="email-form__inpt" type="email" name="email address" placeholder="Email Address" aria-label="Email Address">
+        <button class="email-form__btn"></button>
       </form>
     </section>
-  </main>
-  <footer class="attribution">
-    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p> 
-    <p>Coded by <a href="#">Musicalaudio</a>.</p>
-  </footer>
+    <div class="attribution">
+      <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p> 
+      <p>Coded by <a href="#">Musicalaudio</a>.</p>
+    </div>
 </body>
 </html>
