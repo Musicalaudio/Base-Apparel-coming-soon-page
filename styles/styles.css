@@ -1,0 +1,92 @@
+:root{
+  /* colors */
+  --primary-desaturated-red: hsl(0, 36%, 70%);
+  --primary-hover-red: hsl(0, 36%, 80%);
+  --primary-soft-red: hsl(0, 93%, 68%);
+  --neutral-grayish-red: hsl(0, 6%, 24%);
+
+  /* gradients */
+  --linear-gradient-1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  --linear-gradient-2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+  /* font weights */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-semibold: 600;
+}
+
+body{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  background: var(--linear-gradient-1);
+  --padding-inline: 1rem;
+}
+
+header{
+  margin-inline: var(--padding-inline);
+  margin-block: calc(2.5 * var(--padding-inline));
+}
+
+main{
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+}
+
+main p {
+  color: var(--primary-desaturated-red);
+  font-size: 1rem;
+  margin-block-end: 2em;
+}
+
+.hero-img{
+  width: 100%;
+}
+
+.text-container{
+  padding-inline: var(--padding-inline);
+  margin: 3.5rem auto;
+}
+
+h1{
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  letter-spacing: 5px;
+  line-height: 1.15;
+  margin-block-end: .4em;
+  color: var(--neutral-grayish-red);
+}
+
+.header-light{
+  font-weight: var(--fw-light);
+  color: var(--primary-desaturated-red);
+}
+
+.email-form{
+  position: relative;
+}
+
+.email-form__inpt{
+  width: 100%;
+  border-radius: 25rem;
+  border: 1px var(--primary-desaturated-red) solid;
+  background-color: transparent;
+  color: var(--primary-desaturated-red);
+  padding: .45rem 1.2rem;
+}
+
+.email-form__btn{
+  position: absolute;
+  right: 0;
+  height: 100%;
+  width: 15%;
+  border: none;
+  border-radius: 25rem;
+  background: var(--linear-gradient-2);
+  color: hsl(0, 0%, 100%);
+  box-shadow: 0px 7.5px 20px var(--primary-hover-red);
+}
+
+/* attribution from template */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
