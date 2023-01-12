@@ -32,8 +32,11 @@
       <p>Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals.</p>
 
       <form class="email-form">
-        <input class="email-form__inpt" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" type="email" name="email" placeholder="Email Address" autocomplete="email" aria-label="Email Address" aria-invalid="false">
-        <button class="email-form__btn" type="submit"></button>
+        <div class="wrapper-bar">
+          <input class="email-form__inpt" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" type="email" name="email" placeholder="Email Address" autocomplete="email" aria-label="Email Address" aria-invalid="false">
+          <img src="./images/icon-error.svg" class="error-icon" alt="red circle with exlamation point">
+          <button class="email-form__btn" type="submit"></button>
+        </div>
         <span class="email-form__inpt--error"></span>
       </form>
     </section>

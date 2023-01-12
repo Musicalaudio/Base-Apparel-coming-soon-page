@@ -61,15 +61,27 @@ body{
 
 /* email form component */
 .email-form{
-  position: relative;
+  
 }
 
+.wrapper-bar{
+  position: relative;
+  display: flex;
+  max-width: 445px;
+}
 .email-form__inpt{
   width: 100%;
   border-radius: 25rem;
   border: 1px var(--primary-desaturated-red) solid;
   background-color: transparent;
+  color: var(--neutral-grayish-red);
   padding: .45rem 1.2rem;
+}
+.error-icon{
+  position: absolute;
+  right: 18%;
+  align-self: center;
+  display: none;
 }
 
 .email-form__inpt::placeholder{
@@ -82,10 +94,10 @@ body{
 
 .email-form__inpt[aria-invalid="true"]{
   outline: 2px var(--primary-soft-red) solid;
+  position: relative;
 }
 
 .email-form__btn{
-  /* display: block; */
   position: absolute;
   right: 0;
   height: 100%;
@@ -99,6 +111,7 @@ body{
   cursor: pointer;
 }
 
+
 .email-form__btn:hover{
   background: url(../images/icon-arrow.svg), hsl(0, 80%, 86%);
   background-repeat: no-repeat;
@@ -106,9 +119,9 @@ body{
 }
 
 .email-form__inpt--error{
-  /* display: block; */
   color: var(--primary-soft-red);
   padding: 10rem 1.2rem;
+  font-size: .8rem;
 }
 
 /* attribution from template */
