@@ -1,11 +1,12 @@
-const form = document.querySelector(".email-form")
 const email = document.querySelector(".email-form__inpt")
 const formbtn = document.querySelector(".email-form__btn")
 const errorMsg = document.querySelector(".email-form__inpt--error");
 const errorIcon = document.querySelector(".error-icon");
 
 formbtn.addEventListener('click', (e)=>{
-  if(email.validity.typeMismatch || email.validity.patternMismatch || email){
+  // const regEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  // console.log(regEx.test(email.value))
+  if(email.validity.patternMismatch || !email){
     e.preventDefault();
     errorMsg.innerText = "Please provide a valid email"   
     email.setAttribute("aria-invalid", true);

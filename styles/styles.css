@@ -16,8 +16,8 @@
 }
 
 body{
-  min-height: 100%;
-  background: var(--linear-gradient-1);
+  min-height: 100vh;
+  background: no-repeat var(--linear-gradient-1);
   --margin-inline: 1rem;
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -33,14 +33,14 @@ body{
 
 .text-container{
   margin-inline: var(--margin-inline);
-  margin-block: 3.5rem;
+  margin-block: 3.5em;
   text-align: center;
 }
 
 .text-container p {
   color: var(--primary-desaturated-red);
   font-size: 1rem;
-  margin-block-end: 2em;
+  margin-block-end: 2.5em;
 }
 
 .text-container h1{
@@ -57,13 +57,7 @@ body{
   color: var(--primary-desaturated-red);
 }
 
-
-
 /* email form component */
-.email-form{
-  
-}
-
 .wrapper-bar{
   position: relative;
   display: flex;
@@ -75,11 +69,11 @@ body{
   border: 1px var(--primary-desaturated-red) solid;
   background-color: transparent;
   color: var(--neutral-grayish-red);
-  padding: .45rem 1.2rem;
+  padding: .8rem 1.6rem;
 }
 .error-icon{
   position: absolute;
-  right: 18%;
+  right: 23%;
   align-self: center;
   display: none;
 }
@@ -101,7 +95,7 @@ body{
   position: absolute;
   right: 0;
   height: 100%;
-  width: 15%;
+  width: 20%;
   border-radius: 25rem;
   color: hsl(0, 0%, 100%);
   box-shadow: 0px 7.5px 20px var(--primary-hover-red);
